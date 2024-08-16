@@ -50,10 +50,7 @@ li a:hover:not(.active) {
 }
 @media only screen and (max-width: 460px) {
 #game {
-  width:71428571428%;
-}
-#hud {
-  width:28571428571%;
+  width:100%;
 }
 }
 
@@ -70,10 +67,9 @@ li a:hover:not(.active) {
   
 </ul>
 
-    <div style="display: flex;flex-wrap: wrap;justify-content: center; margin-top:70px">
-<canvas width="320" height="640" id="game" style="
-"></canvas>
-<canvas width="128" height="640" id="hud"></canvas>
+    <div style="display: flex;flex-wrap: wrap;justify-content: center; margin-top:70px" id="game">
+<canvas width="320" height="640"></canvas>
+<canvas width="128" height="640"></canvas>
     </div>
 <script>
 // https://tetris.fandom.com/wiki/Tetris_Guideline
