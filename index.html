@@ -1,14 +1,14 @@
-<html>
-<head>
+<html><head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
 .dropbtn {
-  background-color: #04AA6D;
+  background-color: ;
   color: white;
-  padding: 16px;
+  padding: 14px;
   font-size: 16px;
   border: none;
+  font-family: "Times New Roman";
 }
 
 .dropdown {
@@ -19,7 +19,7 @@
 .dropdown-content {
   display: none;
   
-  background-color: #f1f1f1;
+  background-color: #333;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -32,11 +32,11 @@
   display: block;
 }
 
-.dropdown-content a:hover {background-color: #ddd;}
+.dropdown-content a:hover {background-color: #081567;}
 
 .dropdown:hover .dropdown-content {display: block;}
 
-.dropdown:hover .dropbtn {background-color: #3e8e41;}
+.dropdown:hover .dropbtn {background-color: #081567;}
 ul {
   position: fixed;
   top: 0;
@@ -74,25 +74,29 @@ li a:hover:not(.active) {
 
 <body style="background-color:lightgray">
 
-<ul>
+<ul style="
+    height: 46px;
+    background-color: #333;
+">
+   <ul>
   <li><a class="active" href="index.html">Home</a></li>
   <li><a href="information.html">About</a></li>
   <li><a href="links.html">Links</a></li>
   <li><a href="tetris.html">Tetris</a></li>
   <li><div class="dropdown">
-  <button class="dropbtn">Dropdown</button>
+  <button class="dropbtn">Tetris</button>
   <div class="dropdown-content">
-    <a href="#">Link 1</a>
-    <a href="#">Link 2</a>
-    <a href="#">Link 3</a>
+    <a href="tetrisLight.html">Light Mode</a>
+    <a href="tetris.html">Dark Mode</a>
   </div>
 </div></li>
-  
+   </ul>
 </ul><b><h1 style="border: 10px solid #081567;margin-top:60px; text-align:center;">HTMLearn</h1></b>
 <div style="text-align:center; width:100%;">
 
 <h2 style="color:black;width 20%;">Wow! So much room for activities... If only there were more stuff here :(</h2>
 </div>
+
 
 
 
