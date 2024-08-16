@@ -1,4 +1,48 @@
 <html class=" vyoxzoea idc0_343"><head><style>
+.dropbtn {
+  background-color: #333;
+  color: white;
+  padding: 14px;
+  font-size: 16px;
+  border: none;
+  font-family: "Times New Roman";
+}
+
+.dropdown {
+  
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  background-color: #333;
+  min-width: 40px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #081567;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #081567;}
+ul {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  left:0;
+}
     #box{
         width:500px;
         color:black;
@@ -8,17 +52,6 @@
         margin-bottom:10px;
         margin-top:10px;}
 	
-ul {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-  left:0;
-}
 
 li {
   float: left;
@@ -43,14 +76,18 @@ li a:hover:not(.active) {
 
 </head>
 <body style="background-color: lightgray;">
-	
 <ul>
-  <li><a href="index.html">Home</a></li>
-  <li><a class="active" href="information.html">About</a></li>
-  <li><a href="links.html">Links</a></li>  
-  <li><a href="tetris.html">Tetris</a></li>
-  
-</ul>
+  <li><a class="active" href="index.html">Home</a></li>
+  <li><a href="information.html">About</a></li>
+  <li><a href="links.html">Links</a></li>
+  <li><div class="dropdown">
+  <button class="dropbtn">Tetris</button>
+  <div class="dropdown-content">
+    <a href="tetrisLight.html">Light Mode</a>
+    <a href="tetris.html">Dark Mode</a>
+  </div>
+</div></li>
+   </ul>
 <b><h1 style="margin-top:60px;border: 10px solid #081567; text-align:center;">Info</h1></b><div id="box">
 	
 	<b><h2>What This Is</h2></b>
