@@ -111,6 +111,14 @@ li a:hover:not(.active) {
 
 <btn><b><a href="https://ssyoutube.com" style="margin:10;">Youtube Downloader</a></b></btn>
 <btn><b><a href="/images/QrCode.html" style="margin:10;">Site Qr Code</a></b></btn>
+  <?php
+if ($_GET['run']) {
+  # This code will run if ?run=true is set.
+  exec("/path/to/name.sh");
+}
+?>
+<!-- This link will add ?run=true to your URL, myfilename.php?run=true -->
+<btn><a href="?run=true">Click Me!</a></btn>
 
 </div>
 
