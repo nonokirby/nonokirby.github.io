@@ -220,7 +220,7 @@ li a:hover:not(.active) {
 
   function checkacceptedcookies(){
     accepted = getCookie("acceptedCookies");
-    if (accepted == true||accepted == false){
+    if (accepted !== ""){
       hideCookiePopup();}
   }
 
