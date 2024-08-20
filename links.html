@@ -114,11 +114,11 @@ li a:hover:not(.active) {
   <?php
 if ($_GET['run']) {
   # This code will run if ?run=true is set.
-  exec("/var/www/html/githubLivePull.sh");
+  exec("/var/www/html/scripts/githubLivePull.sh");
 }
 ?>
  <?php
-if ($_GET['Reboot']) {
+if ($_GET['reboot']) {
   # This code will run if ?run=true is set.
   exec("/var/www/html/scripts/Reboot.sh");
 }
