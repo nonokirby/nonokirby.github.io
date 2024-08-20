@@ -117,8 +117,15 @@ if ($_GET['run']) {
   exec("/var/www/html/githubLivePull.sh");
 }
 ?>
-<!-- This link will add ?run=true to your URL, myfilename.php?run=true -->
-<btn style="margin:10" title="Forces the site to pull from GitHub every 5 seconds instead of every 3 minutes"><a href="?run=true">Live Update Mode</a></btn>
+ <?php
+if ($_GET['Reboot']) {
+  # This code will run if ?run=true is set.
+  exec("/var/www/html/scripts/Reboot.sh");
+}
+?>
+<!-- This link will add ?run=true to your URL, myfilename.php?Reboot=true -->
+<btn title="Forces the site to pull from GitHub every 5 seconds instead of every 3 minutes">
+  <a style="margin:10" href="?run=true">Live Update Mode</a></btn>
 
 </div>
 
