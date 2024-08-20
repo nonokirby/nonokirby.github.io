@@ -121,6 +121,7 @@ if ($_GET['run']) {
 if ($_GET['reboot']) {
   # This code will run if ?run=true is set.
   exec("/var/www/html/scripts/Reboot.sh");
+  echo(result);
 }
 ?>
 <!-- This link will add ?run=true to your URL, myfilename.php?Reboot=true -->
