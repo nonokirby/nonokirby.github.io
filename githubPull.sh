@@ -1,5 +1,4 @@
 cd /var/www/html;
 while true; do
 git pull;
-sleeppull;
-sleep
+sleep 10; done
