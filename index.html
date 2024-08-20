@@ -211,15 +211,15 @@ li a:hover:not(.active) {
     document.getElementById("cookie-notice").style.visibility = "hidden";
 } 
   function acceptCookies() {
-    setCookie(acceptedCookies, 1, 365);
+    setCookie("acceptedCookies", 1, 365);
   }
 
   function declineCookies() {
-    setCookie(acceptedCookies, 0, 365);
+    setCookie("acceptedCookies", 0, 365);
   }
 
   function checkacceptedcookies(){
-    accepted = getCookie(acceptedCookies);
+    accepted = getCookie("acceptedCookies");
     if (accepted != Null){
       hideCookiePopup();}
   }
