@@ -175,21 +175,19 @@ li a:hover:not(.active) {
     <div class="cookie-notice-container">
       <span id="cn-notice-text">Hey! Just so you know, this website uses cookies to store data like scores and light/dark mode settings. If you do not select an option, we will assume you accept all cookies. </span>
       <a href="#" id="cn-accept-cookie" data-cookie-set="Accept All" class="cn-set-cookie cn-button bootstrap button">Accept</a>
-      <a href="#" id="cn-refuse-cookie" data-cookie-set="Only Essential" class="cn-set-cookie cn-button bootstrap button">Decline</a>
+      <a href="#" id="cn-refuse-cookie" data-cookie-set="Only Essential" class="cn-set-cookie cn-button bootstrap button" onclick="changeVisibility()">Decline</a>
       <a href="/privacy.html" target="_blank" id="cn-more-info" class="cn-more-info cn-button bootstrap button">Privacy Policy</a>
     </div><div class="cookie-notice-revoke-container"></div></div>
 
 
 
-</body>
+
 <script>
   
   function changeVisibility() {
-    document.getElementById("imgbox2").style.visibility = "hidden";
+    document.getElementById("cookie-notice").style.visibility = "hidden";
 }
-  while (true) {
-    if (data-cookie-set!="0"){
-    changeVisibility();
-    }
+
 </script>
-</html>
+
+</body></html>
