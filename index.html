@@ -211,16 +211,16 @@ li a:hover:not(.active) {
     document.getElementById("cookie-notice").style.visibility = "hidden";
   } 
   function acceptCookies() {
-    setCookie("acceptedCookies", 1, 365);
+    setCookie("acceptedCookies", true, 365);
   }
 
   function declineCookies() {
-    setCookie("acceptedCookies", 0, 365);
+    setCookie("acceptedCookies", false, 365);
   }
 
   function checkacceptedcookies(){
     accepted = getCookie("acceptedCookies");
-    if (accepted == 0||accepted == 1){
+    if (accepted == true||accepted == false){
       hideCookiePopup();}
   }
 
