@@ -212,10 +212,12 @@ li a:hover:not(.active) {
   } 
   function acceptCookies() {
     setCookie("acceptedCookies", true, 365);
+    hideCookiePopup();
   }
 
   function declineCookies() {
     setCookie("acceptedCookies", false, 365);
+    hideCookiePopup();
   }
 
   function checkacceptedcookies(){
