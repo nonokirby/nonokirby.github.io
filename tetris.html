@@ -279,7 +279,7 @@ function showGameOver() {
   context.textAlign = 'center';
   context.textBaseline = 'middle';
   context.fillText('SCORE:'+s, canvas.width / 2, canvas.height / 2.075);
-  let HighScore = getCookie("highscore");
+  let HighScore = getCookie("HighScore");
   if (HighScore == ""){
     let HighScore = 0;
     setCookie("HighScore", 0, 365);
