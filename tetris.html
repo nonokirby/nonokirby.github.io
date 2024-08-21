@@ -76,7 +76,7 @@ li a:hover:not(.active) {
 <script>
 // https://tetris.fandom.com/wiki/Tetris_Guideline
   var s = 0;
-  var scoreMod = 0;
+  var clearLineCount = 0;
   var levelCount = 1;
   var linecount = 1;
   var speed = 35;
@@ -216,7 +216,7 @@ function placeTetromino() {
   for (let row = width - 1; row >= 0; ) {
     if (playfield[row].every(cell => !!cell)) {
       // increase the counter for every line cleared in a single call of the function
-     scoreMod = scoreMod+1;
+     clearLineCount = clearLineCount+1;
 
       // drop every row above this one
       for (let r = row; r >= 0; r--) {
@@ -229,15 +229,15 @@ function placeTetromino() {
       row--;
     }
   
-   s = s + lineScore[scoreMod];
-   lineCount = lineCount + scoreMod;
-   scoreMod = 0;
-   if (s > levelscore[levelCount]){
+   s = s + lineScore[clearLineCount];
+   lineCount = lineCount + clearLineCount;
+   clearLineCount = 0;
+   /*if (s > levelscore[levelCount]){
     levelCount = levelCount +1;
     if (speed > 10){
       speed = speed - 1;
     };
-  };
+  };*/
   }
   tetromino = getNextTetromino();
   placeNext();
