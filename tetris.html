@@ -284,7 +284,7 @@ function showGameOver() {
     let HighScore = 0;
     setCookie("HighScore", 0, 365);
   }
-  if (s > HighScore){
+  if (s >= HighScore){
     let HighScore = s;
     setCookie("HighScore", HighScore, 365);
     context.fillText('NEW HIGH SCORE!' , canvas.width / 2, canvas.height / 1.925);
