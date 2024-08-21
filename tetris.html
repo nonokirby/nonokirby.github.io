@@ -469,10 +469,11 @@ document.addEventListener('keydown', function(e) {
   if(e.which === 17) {
       for (let q = 0; q <20; q++ ){
     const row = tetromino.row + 1;
+    
 
     if (!isValidMove(tetromino.matrix, row, tetromino.col)) {
       tetromino.row = row - 1;
-      s = s + 40
+      s = s + (q*2)
       placeTetromino();
       return;
     }
