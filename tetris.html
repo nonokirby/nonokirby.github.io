@@ -432,7 +432,7 @@ document.addEventListener('keydown', function(e) {
   if (gameOver) return;
   
   // left and right arrow keys (move)
-  if (e.which === 37 || e.which === 39) {
+  if ((e.which === 37) || (e.which === 39)) {
     const col = e.which === 37
       ? tetromino.col - 1
       : tetromino.col + 1;
@@ -443,7 +443,7 @@ document.addEventListener('keydown', function(e) {
   }
 
   // up arrow key (rotate)
-  if (e.which === 38 || e.which === 90) {
+  if ((e.which === 38) || (e.which === 90)) {
     const matrix = rotate(tetromino.matrix);
     if (isValidMove(matrix, tetromino.row, tetromino.col)) {
       tetromino.matrix = matrix;
