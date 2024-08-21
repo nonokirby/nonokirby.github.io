@@ -81,7 +81,28 @@ li a:hover:not(.active) {
   var linecCount = 1;
   var speed = 35;
 
+function setCookie(cname, cvalue, exdays) {
+  const d = new Date();
+  d.setTime(d.getTime() + (exdays*24*60*60*1000));
+  let expires = "expires="+ d.toUTCString();
+  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
 
+function getCookie(cname) {
+  let name = cname + "=";
+  let decodedCookie = decodeURIComponent(document.cookie);
+  let ca = decodedCookie.split(';');
+  for(let i = 0; i <ca.length; i++) {
+    let c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
+  }
   
 // get a random integer between the range of [min,max]
 // @see https://stackoverflow.com/a/1527820/2124254
@@ -258,16 +279,20 @@ function showGameOver() {
   context.textAlign = 'center';
   context.textBaseline = 'middle';
   context.fillText('SCORE:'+s, canvas.width / 2, canvas.height / 2.075);
-  let hs = localStorage.getItem('highscore')
-  if (hs == null){
-    let hs = 0;
+  let HighScore = getcookie("highscore");
+  if (HighScore == null){
+    let HighScore = 0;
+    setCookie("HighScore", 0, 365);
   }
-  if (s > hs){
-    let hs = s;
-    context.fillText('NEW HIGH SCORE', canvas.width / 2, canvas.height / 1.925);
+  if (s > HighScore){
+    let HighScore = s;
+    setCookie("HighScore", HighScore, 365);
+    context.fillText('NEW HIGH SCORE!' + HighScore , canvas.width / 2, canvas.height / 1.925);
   }
-  else { context.fillText('HIGH SCORE:' + hs, canvas.width / 2, canvas.height / 1.925); }
-  localStorage.setItem["highscore"] = hs;
+  else { context.fillText('HIGH SCORE:' + HighScore, canvas.width / 2, canvas.height / 1.925);
+         context.fillText('SCORE' + s, canvas.width / 2, canvas.height / 1.925);
+       }
+  
 }
 
 const canvas = document.getElementById('game');
