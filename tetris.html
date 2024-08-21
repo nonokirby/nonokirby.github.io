@@ -377,7 +377,7 @@ function loop() {
   if (tetromino) {
 
     // tetromino falls every 35 frames
-    if (++count > 1) {
+    if (++count > 35) {
       tetromino.row++;
       count = 0;
 
