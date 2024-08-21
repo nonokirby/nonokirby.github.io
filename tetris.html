@@ -443,7 +443,7 @@ document.addEventListener('keydown', function(e) {
   }
 
   // up arrow key (rotate)
-  if (e.which === 38) {
+  if (e.which === 38 || e.which === 90) {
     const matrix = rotate(tetromino.matrix);
     if (isValidMove(matrix, tetromino.row, tetromino.col)) {
       tetromino.matrix = matrix;
@@ -464,9 +464,11 @@ document.addEventListener('keydown', function(e) {
 
     tetromino.row = row;
   }
-  
+  // "C" (hold)
+  if(e.wich === 67) {
+  }
   // ctrl key (hard drop)
-  if(e.which === 17) {
+  if(e.which === 17 || e.which === 32) {
       for (let q = 0; q <20; q++ ){
     const row = tetromino.row + 1;
     
@@ -477,9 +479,6 @@ document.addEventListener('keydown', function(e) {
       placeTetromino();
       return;
     }
-  if(e.which === 47) {
-      
-  }
 
     tetromino.row = row;
   }}
