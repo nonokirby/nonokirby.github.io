@@ -280,17 +280,16 @@ function showGameOver() {
   context.textBaseline = 'middle';
   context.fillText('SCORE:'+s, canvas.width / 2, canvas.height / 2.075);
   let HighScore = getCookie("highscore");
-  if (HighScore == null){
+  if (HighScore == ""){
     let HighScore = 0;
     setCookie("HighScore", 0, 365);
   }
   if (s > HighScore){
     let HighScore = s;
     setCookie("HighScore", HighScore, 365);
-    context.fillText('NEW HIGH SCORE!' + HighScore , canvas.width / 2, canvas.height / 1.925);
+    context.fillText('NEW HIGH SCORE!' , canvas.width / 2, canvas.height / 1.925);
   }
   else { context.fillText('HIGH SCORE:' + HighScore, canvas.width / 2, canvas.height / 1.925);
-         context.fillText('SCORE' + s, canvas.width / 2, canvas.height / 1.925);
        }
   
 }
