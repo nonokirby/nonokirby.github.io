@@ -77,7 +77,7 @@ li a:hover:not(.active) {
 // https://tetris.fandom.com/wiki/Tetris_Guideline
   var s = 0;
   var scoreMod = 0;
-  var speedcount = 1;
+  var levelCount = 1;
   var speed = 35;
 
 
@@ -228,10 +228,11 @@ function placeTetromino() {
       row--;
     }
   
-   s = s + lineScore[scoreMod] + 10;
+   s = s + lineScore[scoreMod];
+   lineCount = lineCount + scoreMod;
    scoreMod = 0;
-   if (s > levelscore[speedcount]){
-    speedcount = speedcount +1;
+   if (s > levelscore[levelCount]){
+    levelCount = levelCount +1;
     if (speed > 10){
       speed = speed - 1;
     };
@@ -290,7 +291,7 @@ for (let row = -2; row < 20; row++) {
 // declare the score required to raise the speed
   const levelscore = [250, 500, 1000];
 // declare the points rewarded for clearing a line
-  const lineScore = [0, 50, 100, 250, 500];
+  const lineScore = [0, 40, 100, 200, 1200];
   
 // how to draw each tetromino
 // @see https://tetris.fandom.com/wiki/SRS
@@ -375,7 +376,7 @@ function loop() {
   if (tetromino) {
 
     // tetromino falls every 35 frames
-    if (++count > speed) {
+    if (++count > 1) {
       tetromino.row++;
       count = 0;
 
