@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+			   <?xml-stylesheet type="text/xsl" href="stylesheet.xslt"?>
+
+                     
+
+			    <urlset   
+			    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"   
+			    xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
+                      xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"   
+			    xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-image/1.1 http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd"   
+			    >
+<url><loc>https://html.a.pinggy.link</loc><lastmod>2024-08-26T14:18:52.000Z</lastmod><changefreq>daily</changefreq></url>
+<url><loc>https://html.a.pinggy.link/index.html</loc><lastmod>2024-08-26T14:18:52.000Z</lastmod><changefreq>daily</changefreq></url>
+<url><loc>https://html.a.pinggy.link/tetrisLight.html</loc><lastmod>2024-08-26T14:18:52.000Z</lastmod><changefreq>daily</changefreq></url>
+<url><loc>https://html.a.pinggy.link/information.html</loc><lastmod>2024-08-28T15:47:15.000Z</lastmod><changefreq>daily</changefreq></url>
+<url><loc>https://html.a.pinggy.link/tetris.html</loc><lastmod>2024-08-26T14:18:52.000Z</lastmod><changefreq>daily</changefreq></url>
+<url><loc>https://html.a.pinggy.link/links.html</loc><lastmod>2024-08-28T16:07:22.000Z</lastmod><changefreq>daily</changefreq></url>
+<url><loc>https://html.a.pinggy.link/QrCode.html</loc><lastmod>2024-08-26T14:18:52.000Z</lastmod><changefreq>daily</changefreq></url>
+</urlset>
+
