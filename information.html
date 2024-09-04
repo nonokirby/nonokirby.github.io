@@ -102,7 +102,7 @@ li a:hover:not(.active) {
 	<b><h2>What This Is</h2></b>
 	<p style="
     Max-width: 500px;
-">This website is designed, programmed, and hosted by Noah Kirby (me) as a way to host my self programmed minimalist version of tetris (WIP), as well as any other projects I may want to share, or any tests I feel like posting.</p>
+">This website is designed, programmed, and hosted by Noah Kirby (me) as a way to host my self programmed minimalist version of Tetris, as well as any other projects I may want to share, or any assignments from my CS class I feel like publishing.</p>
 </div>
 
 
@@ -111,12 +111,25 @@ li a:hover:not(.active) {
 	<b><h2>Hardware</h2></b>
 	<p style="
     Max-width: 500px;
-">This website is being hosted on my home pc on a VirtualBox VM with T-Mobile Home Internet. It's limited to 3gb of ram and 20gb of memory with 1 cpu core. Thus, limited performance will not be an issue</p>
+">The server is running on my personal pc in a VM with 1 dedicated core and 2 gigs of dedicated Ram. The Pc itself has a Ryzen 5 5600x 6-Core AMD processor, 32gb of Crucial Pro DDR4 Ram, an MSI B550M Pro-VHD WiFi Motherboard with 1 full size PCIE slot, An AMD Radeon RX 570 with 4Gb Vram, 2 500Gb Crucial Sata SSDs, and a 250Gb WD M.2 drive.
+</p>
 </div><div id="box">
 	
 	<b><h2>Software</h2></b>
 	<p style="
     Max-width: 500px;
-">The server itself is running on Apache2 for Ubuntu. All port fowarding and the 'domain' assignment are handled by Pinggy, a paid multi purpose proxy service. The files are stored locally on the VM, and remotely on a Git Repo.</p>
+">The web host is Apache2 running in an Ubuntu VM. It automaticall pulls from a Github Repo (see Links) every 3 minutes. The domain is purchaced and managed thru Squarespace, and the secondary Pinggy subdomain is provided by Pinggy's Paid Tunneing service.</p>	
+</div><div id="box">
+	
+	<b><h2>Networking</h2></b>
+	<p style="
+    Max-width: 500px;
+">Network Access comes from the T-Mobile Home Internet 'Modem', which has high latency and spotty reliability, but will serve this webpage fine. T-Mobile specifically blocks unsolicited inbound traffic, a feature required to be able to access any server running on the network. This is circumvented by Pinggy's Tunneling services, which foward a port of my choice to a persistant subdomain, which is then linked in the dashboard to the Squarespace domain.</p>	
+</div><div id="box">
+	
+	<b><h2>Roadmap</h2></b>
+	<p style="
+    Max-width: 500px;
+">The long term goal is to host the site on new hardware offsite at a local business with reliable fiber for maximum uptime. It would be running alongside a public minecraft server, and a paid, whitelist only server that will serve to bring in income to pay the buisiness. Pinggy will no longer be necessary as port fowarding will be availible as normal. Google's AdSense program will also be implimented to help suppliment the server with some ad revenue.</p>	
 </div>
 </body></html>
