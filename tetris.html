@@ -61,16 +61,28 @@ li a:hover:not(.active) {
 
   </style>
 </head>
-<body style="">
-  <ul>
-  <li><a href="index.html">Home</a></li>
-  <li><a href="information.html">About</a></li>
-  <li><a href="links.html">Links</a></li>  
-  <li><a class="active" href="tetris.html">Tetris</a></li>
-  <li><a href="tetrisLight.html">Light</a></li>
+<body style="">	
+	<!-- Navbar Config -->
+<script>
+  document.getElementById("nvindex").classList.add('active');
+</script>
+     <!-- Navbar Config -->
+     
+     <!-- Navbar -->
+<ul style="
+    height: 46px;
+    background-color: #333;">
+<ul>
+  <li><a id="nindex" href="index.html">Home</a></li>
+  <li><a id="ninformation" href="information.html">About</a></li>
+  <li><a id="nlinks" href="links.html">Links</a></li>
+  <li><a id="ntetris" href="tetris.html">Light Mode</a></li>
+</div>
+</div></li>
   
-</ul>
-
+</ul></ul>
+     <!-- Navbar-->
+  
     <div style="display: flex;flex-wrap:nowrap; justify-content: center; margin-top:70px" id="GVP">
 <canvas width="320" height="640" id="game"></canvas>
 <canvas width="128" height="640" id="hud"></canvas>
