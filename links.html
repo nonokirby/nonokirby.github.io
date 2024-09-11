@@ -87,23 +87,25 @@ li a:hover:not(.active) {
 
 
 </style>
+<!-- Navbar Config -->
+<script>
+  document.getElementById("nvindex").classList.add('active');
+</script>
+<!-- Navbar Config -->
   <title>Links</title>
   <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
 </head>
 <body style="background-color:lightgray">
+     <!-- Navbar -->
 <ul style="
     height: 46px;
     background-color: #333;">
 <ul>
-  <li><a href="index.html">Home</a></li>
-  <li><a href="information.html">About</a></li>
-  <li><a class="active" href="links.html">Links</a></li>
-  <li><div class="dropdown">
-  <button class="dropbtn">Tetris</button>
-  <div class="dropdown-content">
-    <a href="tetrisLight.html">Light Mode</a>
-    <a href="tetris.html">Dark Mode</a>
-  </div>
+  <li><a id="nindex" href="index.html">Home</a></li>
+  <li><a id="ninformation" href="information.html">About</a></li>
+  <li><a id="nlinks" class="active" href="links.html">Links</a></li>
+  <li><a id="ntetris" href="tetris.html">Light Mode</a></li>
+</div>
 </div></li>
   
 </ul></ul>
