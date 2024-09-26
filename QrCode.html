@@ -85,5 +85,15 @@ function load(){
   link = "https://cdn.star.nesdis.noaa.gov/GOES16/ABI/SECTOR/se/11/2024"+Time+"_GOES16-ABI-se-11-2400x2400.jpg";
   document.getElementById("image").src=link;
 }
+
+document.addEventListener('keydown', function(e) {
+  if (gameOver) return;
+  
+  // left and right arrow keys (move)
+  if ((e.which === 37) || (e.which === 39)) {
+    const idk = e.which === 37
+      ? foward()
+      : back();
+  }});
 </script>
 </body></html>
