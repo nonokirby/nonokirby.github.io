@@ -70,19 +70,19 @@ li a:hover:not(.active) {
 
 
 <script>
-let link = "https://cdn.star.nesdis.noaa.gov/GOES16/ABI/SECTOR/se/11/2024"+2702200+"_GOES16-ABI-se-11-2400x2400.jpg";
-let Time = 2702200;
+link = "https://cdn.star.nesdis.noaa.gov/GOES16/ABI/SECTOR/se/11/2024"+2702200+"_GOES16-ABI-se-11-2400x2400.jpg";
+Time = 2702200;
 load();
 function foward(){
-  let Time = Time + 100;  
+  Time = Time + 100;  
   load();
 }
 function back(){
-  let Time = Time - 100;
+  Time = Time - 100;
   load();
 }
 function load(){
-  let link = "https://cdn.star.nesdis.noaa.gov/GOES16/ABI/SECTOR/se/11/2024"+Time+"_GOES16-ABI-se-11-2400x2400.jpg";
+  link = "https://cdn.star.nesdis.noaa.gov/GOES16/ABI/SECTOR/se/11/2024"+Time+"_GOES16-ABI-se-11-2400x2400.jpg";
   document.getElementById("image").src=link;
 }
 </script>
