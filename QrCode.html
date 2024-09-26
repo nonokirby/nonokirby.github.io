@@ -64,22 +64,22 @@ li a:hover:not(.active) {
     <b><h1 style="margin-top:60px; border: 10px solid #081567; text-align:center;">Qr Code</h1></b>
 <div style="text-align:center; width:100%;">
 <img id="image" src="/images/qrcode.png">
-<button onclick="back">Back 30M</button>
-<button onclick="foward">Foward 30M</button>
+<button onclick="back()">Back 30M</button>
+<button onclick="foward()">Foward 30M</button>
 </div>
 
 
 <script>
 let link = "https://cdn.star.nesdis.noaa.gov/GOES16/ABI/SECTOR/se/11/2024"+2702200+"_GOES16-ABI-se-11-2400x2400.jpg";
 let Time = 2702200;
-load;
+load();
 function foward(){
   let Time = Time + 100;  
-  load;
+  load();
 }
 function back(){
   let Time = Time - 100;
-  load;
+  load();
 }
 function load(){
   let link = "https://cdn.star.nesdis.noaa.gov/GOES16/ABI/SECTOR/se/11/2024"+Time+"_GOES16-ABI-se-11-2400x2400.jpg";
