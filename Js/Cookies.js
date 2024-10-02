@@ -40,5 +40,3 @@ function setCookie(cname, cvalue, exdays) {
       if (accepted !== ""){
         hideCookiePopup();}
     }
-  
-    checkacceptedcookies();
