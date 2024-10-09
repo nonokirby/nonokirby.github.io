@@ -7,5 +7,5 @@ navBar.innerHTML =`
 <li><a id="nlinks" href="links.html">Links</a></li>
 <li><a id="ntetris" href="tetris.html">Tetris</a></li>
 <li><a id="ntoast" href="toast.html">Toast</a></li>
-</ul></ul><!-- Navbar-->`
+</ul></ul><!-- Navbar-->`;
  
