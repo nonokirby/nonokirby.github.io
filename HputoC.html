@@ -15,7 +15,7 @@
 <script>
 function temperatureConverter(valNum) {
   valNum = parseFloat(valNum);
-  HPU= Math.round(valNum/10.55)
+  HPU= (valNum/10.55)
   document.getElementById("outputKelvin").innerHTML=HPU*.001;
 }
 </script>
