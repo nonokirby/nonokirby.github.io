@@ -7,6 +7,5 @@ navBar.innerHTML =`
 <li><a id="nlinks" href="links.html">Links</a></li>
 <li><a id="ntetris" href="tetris.html">Tetris</a></li>
 <li><a id="ntoast" href="toast.html">Toast</a></li>
-<li><a id="nHPU" href="CtoHpu.html">HPU</a></li>
 </ul></ul><!-- Navbar-->`;
  
