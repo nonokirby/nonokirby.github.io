@@ -6,6 +6,7 @@ navBar.innerHTML =`
 <li><a id="ninformation" href="information.html">About</a></li>
 <li><a id="nlinks" href="links.html">Links</a></li>
 <li><a id="ntetris" href="tetris.html">Tetris</a></li>
+<li><a id="nrepairs" href="repairs.html">Toast</a></li>
 <li><a id="ntoast" href="toast.html">Toast</a></li>
 </ul></ul><!-- Navbar-->`;
  
